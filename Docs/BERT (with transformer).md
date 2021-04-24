@@ -16,7 +16,7 @@ BERT是一种预训练技术，其网络架构使用的是多层Transformer结�
 
 Transformer的网络架构如图1所示，Transformer是一个encoder-decoder的结构，由N个编码器和解码器堆叠形成。图1的左侧部分为编码器，由Multi-Head Attention和一个全连接组成，用于将输入语料转化成特征向量。右侧部分是解码器，其输入为编码器的输出以及已经预测的结果，由Masked Multi-Head Attention, Multi-Head Attention以及一个全连接和softmax函数组成，用于输出最后结果的条件概率。
 
-<img src="\pic\transformer.png" alt="transformer" style="zoom: 25%;" />
+![](\pic\transformer.png)
 
 上图中，有一些模块需要进一步解释。
 
@@ -44,7 +44,7 @@ Here comes Positional Embedding.
 
 这里使用到位置编码的公式为：
 
-![formula2](\pic\formula2.png)
+![](\pic\formula2.png)
 
 采用三角函数的周期性，对不同的word embedding采用不同频率的三角函数（sin，cos）来表示该特征所在的位置。
 
@@ -58,7 +58,7 @@ BERT的网络架构如下图所示：
 
 
 
-![BERT](\pic\BERT.png)
+![](\pic\BERT.png)
 
 其中Trm模块是由Transformer的Encoder组成。
 
@@ -66,7 +66,7 @@ BERT的网络架构如下图所示：
 
 上图中网络输入模块Ei的结构如下图所示，由 Token Embedding，Position Embedding，Segment Embedding三部分组成。
 
-![BERT input](\pic\BERT input.png)
+![](\pic\BERT input.png)
 
 #### 1) Token Embedding
 
